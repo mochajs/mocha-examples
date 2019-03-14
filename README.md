@@ -15,6 +15,7 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 - Browser (including Karma)
 - Angular
 - async setups (i.e. `--file` plus root hooks, `--delay`)
+- Pipe json output to file
 - Typescript and Babel combination
 
 We welcome suggestions on other useful setups.

@@ -1,0 +1,23 @@
+{
+  "name": "example-applications-typescript",
+  "version": "1.0.0",
+  "description": "Typescript example",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "compile": "tsc"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "assert": "^1.4.1",
+    "mocha": "^6.0.0",
+    "ts-node": "^8.0.2"
+  }
+}

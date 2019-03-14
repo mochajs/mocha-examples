@@ -1,4 +1,4 @@
-# Mocha Working Examples
+# Mocha working examples
 A set of working examples to help demontrate common configurations using Mocha.
 
 ## Requirements

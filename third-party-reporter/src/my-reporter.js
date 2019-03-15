@@ -1,11 +1,10 @@
-// my-reporter.js
-var mocha = require('mocha');
+const mocha = require('mocha');
 module.exports = MyReporter;
 
 function MyReporter(runner) {
   mocha.reporters.Base.call(this, runner);
-  var passes = 0;
-  var failures = 0;
+  let passes = 0;
+  let failures = 0;
 
   runner.on('pass', function(test) {
     passes++;

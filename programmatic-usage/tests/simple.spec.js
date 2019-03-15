@@ -1,8 +1,7 @@
 const { equal } = require("assert");
 const index = require('../src');
 
-describe('programmatic usage suite', function() {
-
+describe('Programmatic usage suite', function() {
   it('should equal true', function() {
     equal(true, true);
   });

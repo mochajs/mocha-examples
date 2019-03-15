@@ -2,7 +2,6 @@
   "name": "example-applications-babel",
   "version": "1.0.0",
   "description": "Babel example",
-  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },

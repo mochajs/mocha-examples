@@ -1,12 +1,10 @@
 {
   "name": "example-applications-third-party-reporter",
   "version": "1.0.0",
-  "description": "Third part reporter usage example",
-  "main": "index.js",
+  "description": "Third party reporter usage example",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^6.0.2"

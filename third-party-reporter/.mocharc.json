@@ -1,0 +1,3 @@
+{
+  "reporter": "./src/my-reporter.js"
+}

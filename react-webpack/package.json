@@ -8,7 +8,7 @@
     "start": "npm run build && opn index.html"
   },
   "directories": {
-    "lib": "./src",
+    "lib": "./lib",
     "test": "./test"
   },
   "engines": {

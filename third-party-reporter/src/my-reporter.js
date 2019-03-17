@@ -1,6 +1,10 @@
-var Mocha = require('mocha');
-var Base = Mocha.reporters.Base;
-var { EVENT_TEST_PASS, EVENT_TEST_FAIL, EVENT_TEST_END } = require('mocha/lib/runner').constants
+const Mocha = require('mocha');
+const Base = Mocha.reporters.Base;
+const { 
+  EVENT_TEST_PASS, 
+  EVENT_TEST_FAIL, 
+  EVENT_TEST_END 
+} = Mocha.Runner.constants
 
 function MyReporter(runner, options) {
   Base.call(this, runner, options);

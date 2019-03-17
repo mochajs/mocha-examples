@@ -1,26 +1,45 @@
-const { deepEqual, equal } = require('assert');
-var { EVENT_TEST_PASS, EVENT_TEST_FAIL, EVENT_TEST_END } = require('mocha/lib/runner').constants
-var MyReporter = require('../../src/my-reporter');
+const { deepEqual } = require('assert');
+const { 
+  EVENT_TEST_PASS, 
+  EVENT_TEST_FAIL, 
+  EVENT_TEST_END 
+} = require('mocha').Runner.constants;
+const MyReporter = require('../../src/my-reporter');
+
+const pendingTest = {
+  name: 'pending',
+  slow: () => '',
+  fullTitle: () => 'pending test title',
+};
+const failTest = {
+  name: 'fail',
+  slow: () => '',
+  fullTitle: () => 'fail test title',
+};
+const passTest = {
+  name: 'pass',
+  slow: () => '',
+  fullTitle: () => 'pass test title',
+};
+
+const expectedEndMessage = {
+  msg: 'end: %d/%d',
+  substr1: 1,
+  substr2: 2
+}
+const expectedPassMessage = {
+  msg: 'pass: %s',
+  substr1: 'pass test title'
+}
+const expectedFailMessage = {
+  msg: 'fail: %s -- error: %s',
+  substr1: 'fail test title',
+  substr2: 'error message'
+}
 
 describe('My Reporter e2e tests', () => {
-  const pendingTest = {
-    name: 'pending',
-    slow: () => '',
-    fullTitle: () => 'pending test title',
-  };
-  const failTest = {
-    name: 'fail',
-    slow: () => '',
-    fullTitle: () => 'fail test title',
-  };
-  const passTest = {
-    name: 'pass',
-    slow: () => '',
-    fullTitle: () => 'pass test title',
-  };
-
   let stdout;
-  let cached;
+  let savedConsoleLog;
   let runner;
 
   beforeEach(() => {
@@ -29,8 +48,8 @@ describe('My Reporter e2e tests', () => {
   })
 
   describe('On test pass', () => {
-    it('should print expected pass message', function() {
-      cached = console.log;
+    it('should print expected pass message', () => {
+      savedConsoleLog = console.log;
       console.log = function(msg, substr1) {
         stdout.push({msg, substr1});
       }
@@ -40,19 +59,15 @@ describe('My Reporter e2e tests', () => {
         }
       };
       MyReporter.call({}, runner);
-      console.log = cached;
+      console.log = savedConsoleLog;
 
-      const expectedMessage = {
-        msg: 'pass: %s',
-        substr1: 'pass test title'
-      }
-      deepEqual(stdout[0], expectedMessage);
+      deepEqual(stdout[0], expectedPassMessage);
     });
   });
 
   describe('On test failure', () => {
-    it('should print expected fail message and error message', function() {
-      cached = console.log;
+    it('should print expected fail message and error message', () => {
+      savedConsoleLog = console.log;
       console.log = function(msg, substr1, substr2) {
         stdout.push({msg, substr1, substr2});
       }
@@ -63,20 +78,15 @@ describe('My Reporter e2e tests', () => {
       };
 
       MyReporter.call({}, runner);
-      console.log = cached;
-      const expectedMessage = {
-        msg: 'fail: %s -- error: %s',
-        substr1: 'fail test title',
-        substr2: 'error message'
-      }
+      console.log = savedConsoleLog;
 
-      deepEqual(stdout[0], expectedMessage);
+      deepEqual(stdout[0], expectedFailMessage);
     });
   });
 
   describe('On end of suite', () => {
-    it('should print expected end message with stats for tests and passes', function() {
-      cached = console.log;
+    it('should print expected end message with stats for tests and passes', () => {
+      savedConsoleLog = console.log;
       console.log = function(msg, substr1, substr2) {
         stdout.push({msg, substr1, substr2});
       }
@@ -91,14 +101,9 @@ describe('My Reporter e2e tests', () => {
       }
 
       MyReporter.call({}, runner);
-      console.log = cached;
-      const expectedMessage = {
-        msg: 'end: %d/%d',
-        substr1: 1,
-        substr2: 2
-      }
+      console.log = savedConsoleLog;
 
-      deepEqual(stdout[0], expectedMessage);
+      deepEqual(stdout[0], expectedEndMessage);
     });
   });
 });

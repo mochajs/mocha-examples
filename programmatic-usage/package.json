@@ -11,7 +11,7 @@
   },
   "directories": {
     "lib": "./src",
-    "src":"./tests"
+    "test":"./tests"
   },
   "license": "ISC",
   "dependencies": {

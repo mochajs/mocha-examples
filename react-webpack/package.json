@@ -4,7 +4,12 @@
   "description": "React Webpack example",
   "scripts": {
     "test": "mocha",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "npm run build && opn index.html"
+  },
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -17,6 +22,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "opn-cli": "^4.0.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "webpack": "^4.29.5"

@@ -1,3 +1,4 @@
 {
-  "reporter": "./src/my-reporter.js"
+  "reporter": "./src/my-reporter.js",
+  "spec": "test/**/*.spec.js"
 }

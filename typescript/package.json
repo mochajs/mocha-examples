@@ -6,6 +6,10 @@
     "test": "mocha",
     "compile": "tsc"
   },
+  "directories": {
+    "lib": "./lib",
+    "src":"./src"
+  },
   "engines": {
     "node": ">=10.0.0"
   },

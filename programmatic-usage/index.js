@@ -1,14 +1,14 @@
-var Mocha = require('mocha');
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs');
+const path = require('path');
+const Mocha = require('mocha');
 
 // Instantiate a Mocha with options
-var mocha = new Mocha({
+const mocha = new Mocha({
   reporter: 'list'
 });
 
-// specify a non-default directory.
-var testDir = 'tests/';
+// Use non-default Mocha test directory.
+const testDir = 'tests/';
 
 // Add each .js file to the mocha instance
 fs.readdirSync(testDir)

@@ -1,5 +1,3 @@
 {
-  "extends": "tslint:recommended",
-  "rules": {},
-  "jsRules": {}
+  "extends": "tslint:recommended"
 }

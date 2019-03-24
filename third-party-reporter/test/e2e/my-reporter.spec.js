@@ -4,7 +4,7 @@ const {
   EVENT_TEST_FAIL, 
   EVENT_TEST_END 
 } = require('mocha').Runner.constants;
-const MyReporter = require('../../src/my-reporter');
+const MyReporter = require('../../lib/my-reporter');
 
 const pendingTest = {
   name: 'pending',

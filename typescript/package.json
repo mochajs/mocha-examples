@@ -1,19 +1,19 @@
 {
-  "name": "example-applications-typescript",
+  "name": "example-typescript-app",
   "version": "1.0.0",
   "description": "Typescript example",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "mocha",
-    "compile": "tsc"
+    "compile": "tsc --declaration",
+    "lint": "tslint --project tsconfig.json",
+    "test": "mocha"
   },
   "directories": {
     "lib": "./lib",
-    "src":"./src"
+    "src": "./src",
+    "test": "./src"
   },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "license": "ISC",
   "dependencies": {
     "typescript": "^3.3.3"
   },
@@ -21,6 +21,11 @@
     "@types/mocha": "^5.2.6",
     "assert": "^1.4.1",
     "mocha": "^6.0.0",
-    "ts-node": "^8.0.2"
-  }
+    "ts-node": "^8.0.2",
+    "tslint": "^5.14.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
 }

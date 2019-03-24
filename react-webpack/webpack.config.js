@@ -1,10 +1,12 @@
 const path = require('path');
  
-// Below we configure webpack to build a client-side bundle with the following instruction:
-// - use the "babel-loading" module for preprocessing of ES6
-// - in "development" mode so webpack will not use any built-in optimisations
-// - start processing code from file "./src/index.js"
-// - output bundle to "lib/index_bundle.js"
+/**
+Below we configure webpack to build a client-side bundle with the following instruction:
+ - use the "babel-loader" module for preprocessing of ES6
+ - in "development" mode so webpack will not use any built-in optimisations
+ - start processing code from file "./src/index.js"
+ - output bundle to "lib/index_bundle.js"
+*/
 
 module.exports = {
   entry: './src/index.js',

@@ -1,24 +1,27 @@
 {
-  "name": "example-applications-babel",
+  "name": "example-babel-app",
   "version": "1.0.0",
   "description": "Babel example",
+  "main": "lib/index.js",
   "scripts": {
+    "compile": "babel src -d lib",
     "test": "mocha"
-  },
-  "engines": {
-    "node": ">=10.0.0"
   },
   "directories": {
     "lib": "./src",
     "test": "./test"
   },
-  "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "mocha": "^6.0.2"
-  }
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
 }

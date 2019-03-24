@@ -1,20 +1,19 @@
 {
-  "name": "example-applications-react-webpack",
+  "name": "example-react-webpack-app",
   "version": "1.0.0",
   "description": "React Webpack example",
+  "main": "src/index.js",
+  "browser": "lib/index_bundle.js",
   "scripts": {
-    "test": "mocha",
     "build": "webpack",
-    "start": "npm run build && opn index.html"
+    "start": "npm run build && opn index.html",
+    "test": "mocha"
   },
   "directories": {
     "lib": "./lib",
+    "src": "./src",
     "test": "./test"
   },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
@@ -28,10 +27,14 @@
     "webpack": "^4.29.5"
   },
   "devDependencies": {
-    "webpack-cli": "^3.2.3",
     "chai": "^4.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
-    "mocha": "^6.0.2"
-  }
+    "mocha": "^6.0.2",
+    "webpack-cli": "^3.2.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
 }

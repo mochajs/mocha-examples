@@ -2,7 +2,7 @@
 
 Full documentation about it [here](https://github.com/mochajs/mocha/wiki/Third-party-reporters).
 
-To use a reporter published on npm (e.g lcov-reporter), install it locally and set `--reporter lcov-reporter`.
+To use a reporter published on npm (e.g., lcov-reporter), install it locally and set `--reporter lcov-reporter`.
 
 It is a very similar setup for `third party UI's`, for more details see [here](https://github.com/mochajs/mocha/wiki/Third-party-UIs).
 

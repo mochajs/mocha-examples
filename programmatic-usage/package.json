@@ -11,14 +11,12 @@
     "lib": "./lib",
     "test": "./tests"
   },
-  "dependencies": {
+  "devDependencies": {
+    "cross-env": "^5.2.0",
     "mocha": "^6.0.2"
   },
   "engines": {
     "node": ">=10.0.0"
   },
-  "license": "ISC",
-  "devDependencies": {
-    "cross-env": "^5.2.0"
-  }
+  "license": "ISC"
 }

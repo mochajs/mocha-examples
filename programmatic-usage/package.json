@@ -1,0 +1,22 @@
+{
+  "name": "example-programmatic-usage-app",
+  "version": "1.0.0",
+  "description": "Programmatic usage example",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env TEST_DIR=$npm_package_directories_test npm run test:programmatic-usage",
+    "test:programmatic-usage": "node $TEST_DIR/run_mocha.js"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./tests"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "mocha": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}

@@ -2,7 +2,6 @@
   "name": "example-selenium-app",
   "version": "1.0.0",
   "description": "Selenium example",
-  "main": "test/selenium.spec.js",
   "scripts": {
     "test": "mocha"
   },

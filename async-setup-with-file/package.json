@@ -1,0 +1,19 @@
+{
+  "name": "example-async-setup-with-file-app",
+  "version": "1.0.0",
+  "description": "Async setup with --file and root hooks example",
+  "main": "test/prepare.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}

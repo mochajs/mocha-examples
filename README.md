@@ -12,9 +12,9 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 ## Potential setups to add in future
 
 - Rest API
-- Browser (including Karma and Selenium)
+- Browser (including Karma)
 - Angular
-- async setups (i.e. `--file` plus root hooks, `--delay`)
+- async setups (i.e. `--delay`)
 - Pipe json output to file
 - Typescript and Babel combination
 

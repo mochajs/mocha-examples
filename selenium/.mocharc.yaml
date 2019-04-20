@@ -1,2 +1,2 @@
 require: '@babel/register'
-timeout: 6000
+timeout: 4000

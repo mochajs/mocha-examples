@@ -1,3 +1,5 @@
+'use strict';
+
 before(function() {
   return new Promise(resolve => {
     console.log('Preparing ...');

@@ -1,6 +1,16 @@
 # Mocha examples
 A set of examples to help demontrate common configurations using Mocha.
 
+## Examples
+
+* [Async setup with --file](async-setup-with-file/)
+* [Babel application](babel/)
+* [Programmatic usage](programmatic-usage/)
+* [React, webpack](react-webpack)
+* [Selenium application](selenium/)
+* [Third party reporter](third-party-reporter/)
+* [TypeScript application](typescript/)
+
 ## Requirements
 
 Each example application will have its own package dependencies but also a [version of Node.js](https://docs.npmjs.com/files/package.json#engines) it was designed and built from.

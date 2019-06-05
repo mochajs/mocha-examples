@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "express": "4.x",
+    "express-static": "1.x",
+    "mocha": "6.x",
+    "puppeteer": "1.17.0",
+    "serve": "11.x"
+  },
+  "engines": {
+    "nodejs": ">= 8.0.0"
+  },
+  "scripts": {
+    "start": "serve .",
+    "test": "mocha test/*.test.js"
+  }
+}

@@ -1,0 +1,34 @@
+
+<html>
+  <body>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <div id="content"></div>
+
+    <script type="text/javascript">
+      const router = new VueRouter({
+        routes: [
+          { path: '/home', component: { template: '<h1>Home</h1>' } },
+          { path: '/about', component: { template: '<h1>About Us</h1>' } }
+        ]
+      });
+
+      new Vue({
+        el: '#content',
+        router,
+        template: `
+          <div>
+            <div>
+              <router-link to="/home">Home</router-link>
+              <router-link to="/about">About Us</router-link>
+            </div>
+            <div id="route">
+              <router-view></router-view>
+            </div>
+          </div>
+        `
+      });
+    </script>
+  </body>
+</html>

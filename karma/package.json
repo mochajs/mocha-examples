@@ -1,0 +1,22 @@
+{
+  "name": "example-karma-app",
+  "version": "1.0.0",
+  "description": "Karma example",
+  "scripts": {
+    "start": "open-cli src/index.html"
+  },
+  "directories": {
+    "lib": "./src",
+    "test": "./test"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "open-cli": "^5.0.0"
+  }
+}

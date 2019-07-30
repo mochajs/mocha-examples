@@ -1,3 +1,5 @@
+const expect = chai.expect;
+
 describe('Array', function () {
   describe('.push()', function () {
     it('should append a value', function () {

@@ -1,4 +1,11 @@
 {
+  "name": "example-vue-puppeteer-app",
+  "version": "1.0.0",
+  "description": "Vue and Puppeteer example",
+  "scripts": {
+    "start": "serve .",
+    "test": "mocha test/*.test.js"
+  },
   "devDependencies": {
     "express": "4.x",
     "express-static": "1.x",
@@ -9,8 +16,5 @@
   "engines": {
     "nodejs": ">= 8.0.0"
   },
-  "scripts": {
-    "start": "serve .",
-    "test": "mocha test/*.test.js"
-  }
+  "license": "ISC"
 }

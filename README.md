@@ -1,5 +1,6 @@
 # Mocha examples
-A set of examples to help demontrate common configurations using Mocha.
+
+A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.
 
 ## Examples
 

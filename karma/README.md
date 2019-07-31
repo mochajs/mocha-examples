@@ -1,6 +1,7 @@
 # Karma
 
-Example running tests using the test runner Karma. These are run against `ChromeHeadless` and `FirefoxHeadless`. It can be run on real `Chrome` and `Firefox`.
+
+Example running tests using the test runner [Karma](https://karma-runner.github.io). These are run against `ChromeHeadless` and `FirefoxHeadless`. It can be run on real `Chrome` and `Firefox`.
 
 ## Commands
 

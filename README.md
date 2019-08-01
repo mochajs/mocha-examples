@@ -1,15 +1,18 @@
 # Mocha examples
-A set of examples to help demontrate common configurations using Mocha.
+
+A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.
 
 ## Examples
 
 * [Async setup with --file](async-setup-with-file/)
 * [Babel application](babel/)
+* [Karma](karma/)
 * [Programmatic usage](programmatic-usage/)
 * [React, webpack](react-webpack)
 * [Selenium application](selenium/)
 * [Third party reporter](third-party-reporter/)
 * [TypeScript application](typescript/)
+* [Vue and Puppeteer application](vue-puppeteer/)
 
 ## Requirements
 
@@ -22,7 +25,6 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 ## Potential setups to add in future
 
 - Rest API
-- Browser (including Karma)
 - Angular
 - async setups (i.e. `--delay`)
 - Pipe json output to file

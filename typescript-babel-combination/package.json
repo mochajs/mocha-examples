@@ -1,0 +1,32 @@
+{
+  "name": "example-typescript-babel-combination",
+  "version": "1.0.0",
+  "description": "TypeScript-Babel Combination",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "check-types": "tsc",
+    "compile": "babel src -d lib --extensions '.ts,.tsx'",
+    "prepublish": "npm run check-types && npm run compile",
+    "test": "mocha"
+  },
+  "directories": {
+    "lib": "./lib",
+    "src": "./src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/register": "^7.6.2",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/mocha": "^5.2.7",
+    "assert": "^1.4.1",
+    "mocha": "^6.2.1",
+    "typescript": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}

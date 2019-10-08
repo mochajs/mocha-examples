@@ -13,6 +13,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 * [Third party reporter](third-party-reporter/)
 * [TypeScript application](typescript/)
 * [Vue and Puppeteer application](vue-puppeteer/)
+* [TypeScript + Babel combination](typescript-babel-combination/)
 
 ## Requirements
 
@@ -28,6 +29,5 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 - Angular
 - async setups (i.e. `--delay`)
 - Pipe json output to file
-- Typescript and Babel combination
 
 We welcome suggestions on other useful setups.

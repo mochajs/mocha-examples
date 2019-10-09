@@ -1,0 +1,27 @@
+{
+  "name": "rest-api-example",
+  "version": "1.0.0",
+  "description": "Rest API example with Express and Supertest",
+  "scripts": {
+    "test": "mocha",
+    "start": "node ./bin/www"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "supertest": "^4.0.2",
+    "http-errors": "~1.6.3",
+    "debug": "~2.6.9"
+  }
+}

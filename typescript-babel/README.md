@@ -1,6 +1,6 @@
 # TypeScript-Babel application
 
-This is a example that uses Babel to transform TypeScript to plain JavaScript, and uses TypeScript for just type-checking.
+This is a example that uses Babel to transform TypeScript to plain JavaScript, and uses TypeScript for just type-checking. It is recommended to be set via `@babel/cli`. Babel looks for `.js` files by default, but this is not configurable withn the Babel config file.
 
 ## Commands
 

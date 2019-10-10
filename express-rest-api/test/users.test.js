@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app.js');
+const app = require('../server/app.js');
 
 describe('GET /users', function() {
   it('return \'respond with a resource\'', function() {

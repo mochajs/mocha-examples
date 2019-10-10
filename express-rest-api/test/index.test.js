@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app.js');
+const app = require('../server/app.js');
 
 describe('GET /', function() {
   it('return index page', function() {
@@ -9,5 +9,3 @@ describe('GET /', function() {
       .expect('<p>some html</p>')
   })
 })
-
-

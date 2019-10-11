@@ -2,10 +2,11 @@ const request = require('supertest');
 const app = require('../server/app.js');
 
 describe('GET /', function() {
-  it('return index page', function() {
+  it('return json response', function() {
     return request(app)
       .get('/')
       .expect(200)
-      .expect('<p>some html</p>')
+      .expect('Content-Type',/json/)
+      .expect('{"text":"some json"}')
   })
 })

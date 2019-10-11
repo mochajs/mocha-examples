@@ -10,7 +10,7 @@
     "test": "./test"
   },
   "devDependencies": {
-    "mocha": "^6.0.2",
+    "mocha": "^6.2.1",
     "supertest": "^4.0.2"
   },
   "engines": {
@@ -19,7 +19,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "http-errors": "^1.6.3",
     "debug": "^2.6.9"
   }
 }

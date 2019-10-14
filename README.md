@@ -14,6 +14,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 * [TypeScript application](typescript/)
 * [Vue and Puppeteer application](vue-puppeteer/)
 * [TypeScript, Babel](typescript-babel/)
+* [Express REST API](express-rest-api/)
 
 ## Requirements
 
@@ -25,7 +26,6 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 
 ## Potential setups to add in future
 
-- Rest API
 - Angular
 - async setups (i.e. `--delay`)
 - Pipe json output to file

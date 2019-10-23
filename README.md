@@ -13,6 +13,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 * [Third party reporter](third-party-reporter/)
 * [TypeScript application](typescript/)
 * [Vue and Puppeteer application](vue-puppeteer/)
+* [Puppeteer application](puppeteer/)
 * [TypeScript, Babel](typescript-babel/)
 * [Express REST API](express-rest-api/)
 

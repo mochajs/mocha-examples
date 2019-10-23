@@ -1,0 +1,21 @@
+{
+  "name": "example-puppeteer-app",
+  "version": "1.0.0",
+  "description": "Mocha and Puppeteer example",
+  "scripts": {
+    "start": "serve .",
+    "test": "mocha test/*.spec.js"
+  },
+  "devDependencies": { 
+    "express": "4.x",
+    "express-static": "1.x",
+    "mocha": "^6.2.1",
+    "puppeteer": "1.17.0",
+    "serve": "11.x"
+  },
+  "engines": {
+    "nodejs": ">= 8.0.0"
+  },
+  "license": "ISC",
+  "dependencies": {}
+}

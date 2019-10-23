@@ -1,13 +1,12 @@
 {
-  "name": "example-vue-puppeteer-app",
+  "name": "example-puppeteer-app",
   "version": "1.0.0",
   "description": "Mocha and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha test/*.test.js"
+    "test": "mocha test/*.spec.js"
   },
-  "devDependencies": {
-    "chai": "^4.2.0",
+  "devDependencies": { 
     "express": "4.x",
     "express-static": "1.x",
     "mocha": "^6.2.1",

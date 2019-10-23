@@ -1,6 +1,5 @@
 const assert = require('assert');
-const puppeteer = require('puppeteer');
-const { expect } = require('chai')
+const puppeteer = require('puppeteer'); 
 const opts = process.env.D ? { headless: false, slowMo: 250 } : {}; 
 
 describe('my app', function() {
@@ -27,10 +26,10 @@ describe('my app', function() {
     await server.close();
   });
 
-  it('should h1 have a Mocha is good', async function() {  
+  it('h1 should say "mocha is good"', async function() {  
     const tag = 'h1'; 
     await page.waitFor(tag); 
     const heading = await page.$eval(tag, heading => heading.innerText);
-    expect(heading).to.eql('Mocha is good');  
+    assert.equal(heading, 'Mocha is good') 
   }); 
 });

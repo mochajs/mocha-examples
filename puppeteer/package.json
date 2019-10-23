@@ -4,9 +4,9 @@
   "description": "Mocha and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha test/*.spec.js"
+    "test": "mocha"
   },
-  "devDependencies": { 
+  "devDependencies": {
     "express": "4.x",
     "express-static": "1.x",
     "mocha": "^6.2.1",

@@ -4,7 +4,7 @@
   "description": "Vue and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha test/*.test.js"
+    "test": "mocha"
   },
   "devDependencies": {
     "express": "4.x",

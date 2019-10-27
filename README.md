@@ -4,10 +4,6 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-Get started
-`>lerna bootstrap`
-`> npm test`
-
 
 ## Examples
 

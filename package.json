@@ -4,6 +4,7 @@
   "description": "A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "test": "lerna run --stream test"
   },
   "repository": {

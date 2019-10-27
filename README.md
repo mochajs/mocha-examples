@@ -2,6 +2,13 @@
 
 A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
+Get started
+`>lerna bootstrap`
+`> npm test`
+
+
 ## Examples
 
 * [Async setup with --file](async-setup-with-file/)

@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/craigtaub/.asdf/installs/nodejs/12.6.0/bin/node /Users/craigtaub/.asdf/installs/nodejs/12.6.0/.npm/bin/yarn run test
+
+PATH: 
+  /Users/craigtaub/Documents/javascript/delete/mocha-tests/mocha-examples/packages/express-rest-api/node_modules/.bin:/Users/craigtaub/Documents/javascript/delete/mocha-tests/mocha-examples/packages/node_modules/.bin:/Users/craigtaub/Documents/javascript/delete/mocha-tests/mocha-examples/node_modules/.bin:/Users/craigtaub/Documents/javascript/delete/mocha-tests/node_modules/.bin:/Users/craigtaub/Documents/javascript/delete/node_modules/.bin:/Users/craigtaub/Documents/javascript/node_modules/.bin:/Users/craigtaub/Documents/node_modules/.bin:/Users/craigtaub/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/craigtaub/.asdf/installs/nodejs/12.6.0/bin:/Users/craigtaub/.asdf/installs/nodejs/12.6.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/craigtaub/Documents/javascript/delete/mocha-tests/mocha-examples/node_modules/.bin:/Users/craigtaub/.asdf/installs/nodejs/12.6.0/bin:/Users/craigtaub/.asdf/installs/nodejs/12.6.0/.npm/bin::/Users/craigtaub/.asdf/shims:/Users/craigtaub/.asdf/bin:./node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS:./node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.6/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/craigtaub/Documents/javascript/delete/mocha-tests/mocha-examples/packages/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /Users/craigtaub/.asdf/installs/nodejs/12.6.0/.npm/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/craigtaub/.asdf/installs/nodejs/12.6.0/.npm/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /Users/craigtaub/.asdf/installs/nodejs/12.6.0/.npm/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "express-rest-api-example",
+    "version": "1.0.0",
+    "description": "Rest API example with Express and Supertest",
+    "scripts": {
+      "test": "mocha",
+      "start": "./server/index.js"
+    },
+    "directories": {
+      "test": "./test"
+    },
+    "devDependencies": {
+      "mocha": "^6.2.1",
+      "supertest": "^4.0.2"
+    },
+    "engines": {
+      "node": ">=10.0.0"
+    },
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "debug": "^2.6.9"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

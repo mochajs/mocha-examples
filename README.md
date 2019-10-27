@@ -20,6 +20,15 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 * [TypeScript, Babel](packages/typescript-babel/)
 * [Express REST API](packages/express-rest-api/)
 
+## Adding a new example 
+
+Follow the below steps:
+
+1. Clone this repo locally
+2. Create your folder under `packages/` 
+3. Run `npm init`
+4. Now build your application and open a PR (its `npm test` will automatically be run in CI).
+
 ## Requirements
 
 Each example application will have its own package dependencies but also a [version of Node.js](https://docs.npmjs.com/files/package.json#engines) it was designed and built from.

@@ -2,20 +2,32 @@
 
 A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
+
 ## Examples
 
-* [Async setup with --file](async-setup-with-file/)
-* [Babel application](babel/)
-* [Karma](karma/)
-* [Programmatic usage](programmatic-usage/)
-* [React, webpack](react-webpack)
-* [Selenium application](selenium/)
-* [Third party reporter](third-party-reporter/)
-* [TypeScript application](typescript/)
-* [Vue and Puppeteer application](vue-puppeteer/)
-* [Puppeteer application](puppeteer/)
-* [TypeScript, Babel](typescript-babel/)
-* [Express REST API](express-rest-api/)
+* [Async setup with --file](packages/async-setup-with-file/)
+* [Babel application](packages/babel/)
+* [Karma](packages/karma/)
+* [Programmatic usage](packages/programmatic-usage/)
+* [React, webpack](packages/react-webpack)
+* [Selenium application](packages/selenium/)
+* [Third party reporter](packages/third-party-reporter/)
+* [TypeScript application](packages/typescript/)
+* [Vue and Puppeteer application](packages/vue-puppeteer/)
+* [Puppeteer application](packages/puppeteer/)
+* [TypeScript, Babel](packages/typescript-babel/)
+* [Express REST API](packages/express-rest-api/)
+
+## Adding a new example 
+
+Follow the below steps:
+
+1. Clone this repo locally
+2. Create your folder under `packages/` 
+3. Run `npm init`
+4. Now build your application and open a PR (its `npm test` will automatically be run in CI).
 
 ## Requirements
 

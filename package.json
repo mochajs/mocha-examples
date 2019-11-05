@@ -1,0 +1,23 @@
+{
+  "name": "mocha-examples",
+  "version": "1.0.0",
+  "description": "A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "test": "lerna run --stream test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochajs/mocha-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochajs/mocha-examples/issues"
+  },
+  "homepage": "https://github.com/mochajs/mocha-examples#readme",
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
+}

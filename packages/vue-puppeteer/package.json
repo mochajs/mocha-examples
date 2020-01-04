@@ -9,7 +9,7 @@
   "devDependencies": {
     "express": "4.x",
     "express-static": "1.x",
-    "mocha": "^6.2.1",
+    "mocha": "^7.0.0",
     "puppeteer": "1.17.0",
     "serve": "11.x"
   },

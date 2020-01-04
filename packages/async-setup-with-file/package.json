@@ -9,7 +9,7 @@
     "test": "./test"
   },
   "devDependencies": {
-    "mocha": "^6.2.1"
+    "mocha": "^7.0.0"
   },
   "engines": {
     "node": ">=10.0.0"

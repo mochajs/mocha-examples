@@ -13,7 +13,7 @@ Tests here are kept next to their code (not in a separate dir). This was done to
 ## ES Modules
 
 If your typescript project's `tsconfig.json` has module code generation set to something other than `CommonJS`, you may
-encounter an error "SyntaxError: Unexpected token {" when you use an import statement.
+encounter an error `"SyntaxError: Unexpected token {"` when you use an import statement.
 
 ```
 import { fail, ok } from 'assert';
@@ -24,7 +24,7 @@ SyntaxError: Unexpected token {
 
 ```
 
-This is because the underlying ts-node does not support ES modules:
+This is because the underlying `ts-node` does not support ES modules:
 
 
  > Import Statements
@@ -32,8 +32,9 @@ This is because the underlying ts-node does not support ES modules:
 
 See: https://www.npmjs.com/package/ts-node#import-statements
 
-A workaround is to change the `compilerOptions` that `ts-node` sees when `mocha` is executed. The environment variable
-`TS_NODE_COMPILER_OPTIONS` can be set when executing `mocha` to give `ts-code` a module setting of `commonjs`. In `package.json`:
+You may need `tsconfig.json` compiler options for `module` to be something other than `commonjs`. You can still set it to
+`commonjs` only for testing. The workaround is to set the environment variable `TS_NODE_COMPILER_OPTIONS` when executing
+`mocha` to give `ts-node` a module setting of `commonjs`. For example, in `package.json`:
 
 ```
   "scripts": {

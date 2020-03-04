@@ -1,0 +1,18 @@
+{
+  "name": "example-async-setup-with-delay",
+  "version": "1.0.0",
+  "description": "Async setup with --delay",
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "./test"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}

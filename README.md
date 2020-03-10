@@ -6,6 +6,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 
 ## Examples
 
+* [Async setup with --delay](packages/async-setup-with-delay/)
 * [Async setup with --file](packages/async-setup-with-file/)
 * [Babel application](packages/babel/)
 * [Karma](packages/karma/)
@@ -39,7 +40,6 @@ Feel free to send a branch to supply an MCVE from one of the applications.
 ## Potential setups to add in future
 
 - Angular
-- async setups (i.e. `--delay`)
 - Pipe json output to file
 
 We welcome suggestions on other useful setups.

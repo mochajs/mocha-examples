@@ -1,7 +1,7 @@
 {
   "name": "mocha-examples",
   "version": "1.0.0",
-  "description": "A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.",
+  "description": "A set of examples to help demonstrate common configurations using Mocha. They should all run out-the-box.",
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",

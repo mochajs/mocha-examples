@@ -15,7 +15,7 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0",
     "chromedriver": "^83.0.0",
-    "mocha": "^7.2.0",
+    "mocha": "latest",
     "selenium-webdriver": "^4.0.0-alpha.5"
   },
   "engines": {

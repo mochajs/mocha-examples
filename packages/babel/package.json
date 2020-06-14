@@ -17,7 +17,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.9.0",
-    "mocha": "^7.2.0"
+    "mocha": "latest"
   },
   "engines": {
     "node": ">=10.0.0"

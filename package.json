@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "test": "lerna run --stream test"
+    "test": "lerna run --stream test",
+    "clean": "lerna clean"
   },
   "repository": {
     "type": "git",

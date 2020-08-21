@@ -13,8 +13,10 @@ describe("Sqlite", function () {
   let db;
   before(() => {
     db = initDB(path.resolve(__dirname, "..", "db", "test.db"));
-    dropTable(db);
-    createTable(db);
+    db.serialize(function() {
+      dropTable(db);
+      createTable(db);
+    });
   });
 
   it("should insert and fetch a user", async () => {

@@ -24,7 +24,7 @@ exports.getUsersByName = function getUsersByName(db, name) {
   return new Promise((resolve, reject) => {
     db.all(sql, (err, rows) => {
       if (err) {
-        reject(err);
+        return reject(err);
       }
       resolve(rows);
     });

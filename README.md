@@ -19,6 +19,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 * [Puppeteer application](packages/puppeteer/)
 * [TypeScript, Babel](packages/typescript-babel/)
 * [Express REST API](packages/express-rest-api/)
+* [Node Sqlite 3 example](packages/node-sqlite3/)
 
 ## Adding a new example 
 

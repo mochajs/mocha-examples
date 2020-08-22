@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const app = require('./app');
 const debug = require('debug')('example:server');
 

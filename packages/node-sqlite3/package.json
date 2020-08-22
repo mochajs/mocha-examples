@@ -1,5 +1,5 @@
 {
-  "name": "example-database-app",
+  "name": "example-node-sqlite3",
   "version": "1.0.0",
   "description": "Node Sqlite3 example",
   "main": "src/index.js",

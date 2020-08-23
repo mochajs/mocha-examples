@@ -10,7 +10,7 @@ describe("Playwright", () => {
 
     beforeEach(async () => {
         const { chromium } = playwright;
-        browser = await chromium.launch({ headless: false });
+        browser = await chromium.launch({ headless: true });
         context = await browser.newContext();
         page = await context.newPage(BASE_URL);
         await page.goto(BASE_URL);

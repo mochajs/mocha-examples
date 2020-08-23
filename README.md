@@ -32,7 +32,7 @@ Follow the below steps:
 
 ## Linting
 
-There is generally no linting requirement for each tool, but we recommend using prettier. You can install and run it with:
+There is generally no linting requirement for each example, but we recommend running prettier. You can install and run it with:
 
     npm install prettier
     prettier --write .

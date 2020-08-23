@@ -1,0 +1,20 @@
+{
+  "name": "example-node-sqlite3",
+  "version": "1.0.0",
+  "description": "Node Sqlite3 example",
+  "main": "src/index.js",
+  "directories": {
+    "test": "./test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "latest",
+    "sqlite3": "^5.0.0"
+  }
+}

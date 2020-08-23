@@ -1,5 +1,4 @@
 const assert = require("assert");
-const path = require("path");
 const {
   initDB,
   createTable,
@@ -12,7 +11,7 @@ const {
 describe("Sqlite", function () {
   let db;
   before(() => {
-    db = initDB(path.resolve(__dirname, "..", "db", "test.db"));
+    db = initDB(':memory:');
     db.serialize(function() {
       dropTable(db);
       createTable(db);

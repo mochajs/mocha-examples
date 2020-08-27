@@ -10,19 +10,20 @@ const {
 
 describe("Sqlite", function () {
   let db;
-  before(() => {
+  before((done) => {
     db = initDB(':memory:');
     db.serialize(function() {
       dropTable(db);
       createTable(db);
     });
+    done();
   });
 
   it("should insert and fetch a user", async () => {
     const name = "mocha";
     const email = "mocha@test.com";
 
-    insertUser(db, name, email);
+    await insertUser(db, name, email);
     const user = await getUsersByName(db, name);
     assert.deepEqual(user, [{ id: 1, name, email }]);
   });

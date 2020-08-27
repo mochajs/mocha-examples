@@ -12,11 +12,11 @@ describe("Sqlite", function () {
   let db;
   before((done) => {
     db = initDB(':memory:');
-    db.serialize(function() {
-      dropTable(db);
-      createTable(db);
+    db.serialize(async function() {
+      await dropTable(db);
+      await createTable(db);
+      done();
     });
-    done();
   });
 
   it("should insert and fetch a user", async () => {

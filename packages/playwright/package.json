@@ -4,7 +4,7 @@
     "description": "example to use mocha with playwright",
     "main": "test/index.spec.js",
     "scripts": {
-        "test": "mocha --timeout 30000"
+        "test": "mocha --timeout 10000"
     },
     "dependencies": {
         "mocha": "latest",

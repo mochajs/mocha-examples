@@ -25,6 +25,6 @@ describe("Playwright", () => {
             "id=tag",
             header => header.innerText
         );
-        assert.equal(headerText, "simple, flexible, fun");
+        assert.strictEqual(headerText, "simple, flexible, fun");
     });
 });

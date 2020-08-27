@@ -4,7 +4,7 @@
   "description": "Vue and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "devDependencies": {
     "express": "4.x",

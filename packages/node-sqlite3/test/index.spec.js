@@ -10,11 +10,12 @@ const {
 
 describe("Sqlite", function () {
   let db;
-  before(() => {
+  before((done) => {
     db = initDB(':memory:');
-    db.serialize(function() {
-      dropTable(db);
-      createTable(db);
+    db.serialize(async function() {
+      await dropTable(db);
+      await createTable(db);
+      done();
     });
   });
 
@@ -22,7 +23,7 @@ describe("Sqlite", function () {
     const name = "mocha";
     const email = "mocha@test.com";
 
-    insertUser(db, name, email);
+    await insertUser(db, name, email);
     const user = await getUsersByName(db, name);
     assert.deepEqual(user, [{ id: 1, name, email }]);
   });

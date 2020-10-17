@@ -1,0 +1,31 @@
+{
+  "name": "exmaple-rxjs",
+  "version": "1.0.0",
+  "description": "exmaple to test reactive extension of rxjs with mocha",
+  "main": "test/index.test.js",
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "mocha": "latest"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochajs/mocha-examples.git"
+  },
+  "keywords": [
+    "mocha",
+    "rxjs"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochajs/mocha-examples/issues"
+  },
+  "homepage": "https://github.com/mochajs/mocha-examples#readme"
+}

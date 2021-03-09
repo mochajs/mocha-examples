@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "mocha": "latest",
-        "playwright": "^1.3.0"
+        "playwright": "^1.9.1"
     },
     "engines": {
         "node": ">=10.0.0"
@@ -17,7 +17,10 @@
         "type": "git",
         "url": "git+https://github.com/mochajs/mocha-examples.git"
     },
-    "keywords": ["mocha", "playwright"],
+    "keywords": [
+        "mocha",
+        "playwright"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/mochajs/mocha-examples/issues"

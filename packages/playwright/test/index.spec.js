@@ -21,10 +21,9 @@ describe("Playwright", () => {
     });
 
     it("should render mocha homepage", async () => {
-        const headerText = await page.$eval(
-            "id=tag",
-            header => header.innerText
-        );
-        assert.strictEqual(headerText, "simple, flexible, fun");
+        const tagElement = await page.waitForSelector('[id=tag]');
+        const tagText = await tagElement.textContent()
+
+        assert.strictEqual(tagText, "simple, flexible, fun");
     });
 });

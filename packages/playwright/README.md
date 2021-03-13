@@ -1,6 +1,6 @@
 # Playwright
 
-Basic example for mocha and playwright(`^1.3.0`)
+Basic example for mocha and playwright(`^1.9.1`)
 
 ## Commands
 

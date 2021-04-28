@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "karma": "^5.0.2",
+    "karma": "^6.3.2",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.0.0",
-    "karma-firefox-launcher": "^1.1.0",
+    "karma-firefox-launcher": "^2.1.0",
     "karma-mocha": "^2.0.0",
     "mocha": "latest"
   },
@@ -25,6 +25,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "open-cli": "^5.0.0"
+    "open-cli": "^6.0.1"
   }
 }

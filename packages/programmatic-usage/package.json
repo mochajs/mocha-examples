@@ -4,7 +4,7 @@
   "description": "Programmatic usage example",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env TEST_DIR=$npm_package_directories_test npm run test:programmatic-usage",
+    "test": "cross-env TEST_DIR=./tests npm run test:programmatic-usage",
     "test:programmatic-usage": "node $TEST_DIR/run_mocha.js"
   },
   "directories": {

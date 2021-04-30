@@ -15,9 +15,9 @@
     "test": "./test"
   },
   "dependencies": {
-    "opn-cli": "^4.0.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "opn-cli": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -25,13 +25,13 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0",
     "mocha": "latest",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
   },
   "engines": {
     "node": ">=10.0.0"

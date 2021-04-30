@@ -4,9 +4,11 @@
   "description": "A set of examples to help demonstrate common configurations using Mocha. They should all run out-the-box.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --no-ci && npm run clean:packagelock",
     "test": "lerna run --stream test",
-    "clean": "lerna clean"
+    "clean": "lerna clean",
+    "postclean": "npm run clean:packagelock",
+    "clean:packagelock": "rimraf -g **/package-lock.json"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/mochajs/mocha-examples#readme",
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^4.0.0",
+    "rimraf": "^2.7.1"
   }
 }

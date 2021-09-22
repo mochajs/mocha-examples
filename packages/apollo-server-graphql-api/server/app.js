@@ -9,7 +9,7 @@ const context = { db };
 const server = new ApolloServer({
     resolvers,
     typeDefs,
-    context
+    context,
 });
 
 module.exports = { server, resolvers, context, typeDefs };

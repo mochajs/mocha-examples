@@ -13,7 +13,7 @@ describe("Create Apollo-Server", () => {
         server = new ApolloServer({ context, resolvers, typeDefs });
         const { server: httpServer } = await server.listen({ port: 0 });
         request(httpServer)
-            .get('/.well-known/apollo/server-health')
+            .get("/.well-known/apollo/server-health")
             .expect(200, { status: "pass" });
     });
 });

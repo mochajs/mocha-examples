@@ -3,8 +3,7 @@ const { context, resolvers, typeDefs } = require("../server/app.js");
 const { ApolloServer } = require("apollo-server");
 const assert = require("assert");
 
-describe("User", async () => {
-
+describe("User", () => {
     let server;
     afterEach(async () => {
         await server.stop();

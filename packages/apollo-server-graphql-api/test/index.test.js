@@ -12,7 +12,7 @@ describe("Create Apollo-Server", () => {
     it("return http code 200", async () => {
         server = new ApolloServer({ context, resolvers, typeDefs });
         const { server: httpServer } = await server.listen({ port: 0 });
-        request(httpServer)
+        await request(httpServer)
             .get("/.well-known/apollo/server-health")
             .expect(200, { status: "pass" });
     });

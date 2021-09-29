@@ -6,6 +6,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 
 ## Examples
 
+- [Apollo-Server GraphQL API](packages/apollo-server-graphql-api/)
 - [Async setup with --delay](packages/async-setup-with-delay/)
 - [Async setup with --file](packages/async-setup-with-file/)
 - [Babel application](packages/babel/)

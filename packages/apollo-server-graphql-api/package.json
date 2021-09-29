@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "GraphQL API example with Apollo-Server and Supertest",
   "scripts": {
-    "test": "mocha --timeout 10000",
-    "start": "node server/index.js"
+    "test": "mocha --timeout 10000"
   },
   "devDependencies": {
     "mocha": "latest",

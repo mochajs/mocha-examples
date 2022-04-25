@@ -1,4 +1,4 @@
-# Vue and Puppeteer
+# Vue 2 and Puppeteer
 
 [This blog post describes this Vue/Mocha/Puppeteer setup in detail](http://thecodebarbarian.com/testing-vue-apps-with-puppeteer-and-mocha.html).
 

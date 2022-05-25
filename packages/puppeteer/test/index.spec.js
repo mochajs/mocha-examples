@@ -28,7 +28,7 @@ describe('my app', function() {
 
   it('h1 should say "mocha is good"', async function() {  
     const tag = 'h1'; 
-    await page.waitFor(tag); 
+    await page.waitForSelector(tag);
     const heading = await page.$eval(tag, heading => heading.innerText);
     assert.equal(heading, 'Mocha is good') 
   }); 

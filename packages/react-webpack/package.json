@@ -28,6 +28,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
+    "cheerio": "1.0.0-rc.3",
     "enzyme": "^3.9.0",
     "mocha": "latest",
     "webpack": "^5.35.1",

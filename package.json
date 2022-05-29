@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mochajs/mocha-examples#readme",
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "rimraf": "^2.7.1"
+    "lerna": "^5.0.0",
+    "rimraf": "^3.0.2"
   }
 }

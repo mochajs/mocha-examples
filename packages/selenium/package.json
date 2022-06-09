@@ -16,7 +16,7 @@
     "@babel/register": "^7.0.0",
     "chromedriver": "latest",
     "mocha": "latest",
-    "selenium-webdriver": "^4.1.1"
+    "selenium-webdriver": "^4.2.0"
   },
   "engines": {
     "node": ">=10.0.0"

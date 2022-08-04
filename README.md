@@ -23,6 +23,7 @@ A set of examples to help demontrate common configurations using Mocha. They sho
 - [Node Sqlite 3 example](packages/node-sqlite3/)
 - [Playwright application](packages/playwright/)
 - [RxJs example](packages/rxjs/)
+- [node-fs-json](packages/node-fs-json/)
 
 ## Adding a new example
 

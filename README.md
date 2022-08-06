@@ -1,6 +1,6 @@
 # Mocha examples
 
-A set of examples to help demontrate common configurations using Mocha. They should all run out-the-box.
+A set of examples to help demonstrate common configurations using Mocha. They should all run out-the-box.
 
 [![Build Status](https://github.com/mochajs/mocha-examples/workflows/Tests/badge.svg?branch=master)](https://github.com/mochajs/mocha-examples/actions?query=workflow%3ATests+branch%3Amaster) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 

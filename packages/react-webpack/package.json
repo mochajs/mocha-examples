@@ -7,7 +7,8 @@
   "scripts": {
     "build": "webpack",
     "start": "npm run build && opn index.html",
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "lib": "./lib",

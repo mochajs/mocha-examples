@@ -4,7 +4,8 @@
   "description": "Mocha and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "devDependencies": {
     "express": "4.x",

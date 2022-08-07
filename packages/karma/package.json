@@ -5,7 +5,8 @@
   "scripts": {
     "start": "open-cli src/index.html",
     "test": "karma start --single-run",
-    "test:debug": "karma start"
+    "test:debug": "karma start",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "lib": "./src",

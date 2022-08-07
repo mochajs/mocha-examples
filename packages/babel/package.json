@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "babel src -d lib",
     "prepublish": "npm run compile",
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "lib": "./src",

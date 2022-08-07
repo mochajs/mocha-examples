@@ -4,7 +4,8 @@
   "description": "exmaple to test reactive extension of rxjs with mocha",
   "main": "test/index.test.js",
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "ls": "npm ls --silent"
   },
   "dependencies": {
     "rxjs": "^6.6.3"

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Async setup with --delay",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "test": "./test"

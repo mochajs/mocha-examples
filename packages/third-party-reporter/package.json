@@ -4,7 +4,8 @@
   "description": "Third party reporter usage example",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "lib": "./lib",

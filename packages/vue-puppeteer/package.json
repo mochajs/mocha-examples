@@ -4,7 +4,8 @@
   "description": "Vue and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "ls": "npm ls --silent"
   },
   "devDependencies": {
     "express": "4.x",

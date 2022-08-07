@@ -9,7 +9,8 @@
     "lint": "tslint --project tsconfig.json",
     "compile": "babel src -d lib --extensions '.ts,.tsx'",
     "prepublish": "npm run check-types && npm run compile",
-    "test": "mocha"
+    "test": "mocha",
+    "ls": "npm ls --silent"
   },
   "directories": {
     "lib": "./lib",

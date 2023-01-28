@@ -10,8 +10,8 @@
     "express": "4.x",
     "express-static": "1.x",
     "mocha": "latest",
-    "puppeteer": "9.0.0",
-    "serve": "11.x"
+    "puppeteer": "^19.6.2",
+    "serve": "14.x"
   },
   "engines": {
     "nodejs": ">= 10.0.0"

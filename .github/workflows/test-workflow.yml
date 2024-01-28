@@ -1,0 +1,47 @@
+name: Test workflow
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: number
+
+jobs:
+  test:
+    name: '${{ matrix.package }} - node.js v${{ inputs.node-version }}'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - apollo-server-graphql-api
+          - async-setup-with-delay
+          - async-setup-with-file
+          - babel
+          - express-rest-api
+          - karma
+          - node-sqlite3
+          - playwright
+          - programmatic-usage
+          - puppeteer
+          - react-webpack
+          - rxjs
+          - selenium
+          - third-party-reporter
+          - typescript
+          - typescript-babel
+          - vue-puppeteer
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '${{ inputs.node-version }}'
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          cd packages/${{ matrix.package }}
+          npm install
+      - name: Run tests
+        run:  |
+          cd packages/${{ matrix.package }}
+          npm run test

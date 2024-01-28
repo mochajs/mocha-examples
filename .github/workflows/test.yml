@@ -11,7 +11,7 @@ on:
 
 jobs:
   test:
-    name: 'Node.js v${{ matrix.node }}'
+    name: '${{ matrix.package-folder }} - Node.js v${{ matrix.node }}'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -47,4 +47,6 @@ jobs:
           cd packages/${{ matrix.package-folder }}
           npm install
       - name: Run tests
-        run: npm run test
+        run:  |
+          cd packages/${{ matrix.package-folder }}
+          npm run test

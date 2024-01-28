@@ -15,25 +15,36 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        package-folder:
+          - apollo-server-graphql-api
+          - async-setup-with-delay
+          - async-setup-with-file
+          - babel
+          - express-rest-api
+          - karma
+          - node-sqlite3
+          - playwright
+          - programmatic-usage
+          - puppeteer
+          - react-webpack
+          - rxjs
+          - selenium
+          - third-party-reporter
+          - typescript
+          - typescript-babel
+          - vue-puppeteer
         node:
           - 18
           - 20
           - 22
     steps:
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: '${{ matrix.node }}'
-      - uses: actions/checkout@v2
-      - name: 'Cache node_modules'
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('**/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-v${{ matrix.node }}-
-      - name: Install Dependencies
-        run: npm install
-      - name: Install Playwright
-        run: npx playwright install
-      - name: Run All Node.js Tests
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          cd ${{ matrix.package-folder }}
+          npm install
+      - name: Run tests
         run: npm run test

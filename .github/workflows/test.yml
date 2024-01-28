@@ -14,6 +14,7 @@ jobs:
     name: '${{ matrix.package-folder }} - Node.js v${{ matrix.node }}'
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         package-folder:
           - apollo-server-graphql-api

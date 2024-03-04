@@ -2,9 +2,6 @@
   "name": "example-browser",
   "version": "1.0.0",
   "description": "Browser example",
-  "scripts": {
-    "test": "mocha"
-  },
   "engines": {
     "node": ">=10.0.0"
   },

@@ -1,7 +1,7 @@
 {
-  "name": "example-browser",
+  "name": "example-tdd",
   "version": "1.0.0",
-  "description": "Browser example",
+  "description": "TDD example",
   "scripts": {
     "test": "mocha test.spec.js"
   },

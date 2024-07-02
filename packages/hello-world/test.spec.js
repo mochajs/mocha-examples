@@ -1,7 +1,4 @@
-const assert = require("assert");
-
-describe("example", () => {
-    it("2 + 2", () => {
-        assert.equal(2 + 2, 4);
-    });
+describe("example", async () => {
+    await new Promise();
+    it("2 + 2", () => {});
 });

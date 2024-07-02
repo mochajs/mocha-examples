@@ -1,7 +1,7 @@
 {
-  "name": "example-browser",
+  "name": "hello-world",
   "version": "1.0.0",
-  "description": "Browser example",
+  "description": "Straightforward example",
   "scripts": {
     "test": "mocha test.spec.js"
   },

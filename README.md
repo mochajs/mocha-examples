@@ -6,23 +6,30 @@ A set of examples to help demonstrate common configurations using Mocha. They sh
 
 ## Examples
 
+The most straightforward example is ["Hello World"](packages/hello-world/).
+Additional examples include:
+
 - [Apollo-Server GraphQL API](packages/apollo-server-graphql-api/)
 - [Async setup with --delay](packages/async-setup-with-delay/)
 - [Async setup with --file](packages/async-setup-with-file/)
 - [Babel application](packages/babel/)
-- [Karma](packages/karma/)
-- [Programmatic usage](packages/programmatic-usage/)
-- [React, webpack](packages/react-webpack)
-- [Selenium application](packages/selenium/)
-- [Third party reporter](packages/third-party-reporter/)
-- [TypeScript application](packages/typescript/)
-- [Vue and Puppeteer application](packages/vue-puppeteer/)
-- [Puppeteer application](packages/puppeteer/)
-- [TypeScript, Babel](packages/typescript-babel/)
+- [Browser](packages/browser/)
 - [Express REST API](packages/express-rest-api/)
+- [Karma](packages/karma/)
 - [Node Sqlite 3 example](packages/node-sqlite3/)
 - [Playwright application](packages/playwright/)
+- [Programmatic usage](packages/programmatic-usage/)
+- [Puppeteer application](packages/puppeteer/)
+- [React, webpack](packages/react-webpack)
 - [RxJs example](packages/rxjs/)
+- [Selenium application](packages/selenium/)
+- [TDD](packages/tdd/)
+- [Third party reporter](packages/third-party-reporter/)
+- [TypeScript application](packages/typescript/)
+- [TypeScript with `ts-node`'s ESM loader](packages/typescript-ts-node-esm-loader/)
+- [TypeScript with `tsx`'s ESM import](packages/typescript-tsx-esm-import/)
+- [TypeScript, Babel](packages/typescript-babel/)
+- [Vue and Puppeteer application](packages/vue-puppeteer/)
 
 ## Adding a new example
 

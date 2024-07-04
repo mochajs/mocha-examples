@@ -14,9 +14,9 @@
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.3.4",
     "@babel/register": "^7.0.0",
-    "chromedriver": "^109.0.0",
+    "chromedriver": "^126.0.4",
     "mocha": "latest",
-    "selenium-webdriver": "^4.2.0"
+    "selenium-webdriver": "^4.22.0"
   },
   "engines": {
     "node": ">=10.0.0"

@@ -4,7 +4,7 @@ import { Builder, By, Key, Capabilities } from "selenium-webdriver";
 import assert from "assert";
 import { path } from "chromedriver";
 let driver = null;
-const chromeOptions = new chrome.Options().headless();
+const chromeOptions = new chrome.Options().addArguments("--headless=new");
 const URL = "https://www.google.com/webhp?hl=en";
 
 describe("Selenium", () => {

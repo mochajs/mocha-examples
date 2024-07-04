@@ -33,5 +33,7 @@ jobs:
             ${{ runner.os }}-node-v${{ matrix.node }}-
       - name: Install Dependencies
         run: npm install
+      - name: Install Playwright
+        run: npx playwright install
       - name: Run All Node.js Tests
         run: npm run test

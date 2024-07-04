@@ -1,0 +1,21 @@
+{
+  "name": "typescript-tsx-esm-import",
+  "version": "1.0.0",
+  "description": "TypeScript example with tsx as an import",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "mocha --import=tsx"
+  },
+  "devDependencies": {
+    "@types/mocha": "latest",
+    "assert": "^2.1.0",
+    "mocha": "^10.2.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "MIT",
+  "type": "module"
+}

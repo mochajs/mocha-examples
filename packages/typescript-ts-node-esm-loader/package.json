@@ -1,5 +1,5 @@
 {
-  "name": "typescript-esm-loader",
+  "name": "typescript-ts-node-esm-loader",
   "version": "1.0.0",
   "description": "TypeScript example with ts-node/esm as a loader",
   "scripts": {

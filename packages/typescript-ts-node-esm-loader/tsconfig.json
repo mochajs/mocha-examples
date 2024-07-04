@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "module": "ESNext"
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   }
 }

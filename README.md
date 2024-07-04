@@ -54,10 +54,3 @@ Each example application will have its own package dependencies but also a [vers
 ## Reporting a bug?
 
 Feel free to send a branch to supply an MCVE from one of the applications.
-
-## Potential setups to add in future
-
-- Angular
-- Pipe json output to file
-
-We welcome suggestions on other useful setups.

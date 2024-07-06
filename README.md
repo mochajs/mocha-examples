@@ -2,7 +2,10 @@
 
 A set of examples to help demonstrate common configurations using Mocha. They should all run out-the-box.
 
-[![Build Status](https://github.com/mochajs/mocha-examples/workflows/Tests/badge.svg?branch=main)](https://github.com/mochajs/mocha-examples/actions?query=workflow%3ATests+branch%3Amain) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+<a href="https://discord.gg/KeDn2uXhER"><img alt="Chat - Discord" src="https://img.shields.io/badge/chat-Discord-5765F2.svg" /></a>
+<a href="https://lerna.js.org"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="Maintained with Lerna"></a>
+<a href="https://github.com/mochajs/mocha#sponsors"><img src="https://opencollective.com/mochajs/tiers/sponsors/badge.svg" alt="OpenCollective Sponsors"></a>
+<a href="https://github.com/mochajs/mocha#backers"><img src="https://opencollective.com/mochajs/tiers/backers/badge.svg" alt="OpenCollective Backers"></a>
 
 ## Examples
 

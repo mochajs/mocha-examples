@@ -36,6 +36,6 @@ jobs:
           cd packages/${{ matrix.package }}
           npm install
       - name: Run tests
-        run:  |
+        run: |
           cd packages/${{ matrix.package }}
           npm run test

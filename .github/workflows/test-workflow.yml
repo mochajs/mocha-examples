@@ -1,0 +1,41 @@
+name: Test workflow
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: number
+
+jobs:
+  define-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.packages.outputs.packages }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Define packages
+        id: packages
+        run: |
+          echo "packages=$(ls -d packages/* | xargs -n 1 basename | jq -R . | jq -s -c .)" >> "$GITHUB_OUTPUT"
+
+  test:
+    name: '${{ matrix.package }} - Node.js v${{ inputs.node-version }}'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJSON(needs.define-matrix.outputs.packages) }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '${{ inputs.node-version }}'
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          cd packages/${{ matrix.package }}
+          npm install
+      - name: Run tests
+        run: |
+          cd packages/${{ matrix.package }}
+          npm run test

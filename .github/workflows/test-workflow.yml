@@ -8,30 +8,24 @@ on:
         type: number
 
 jobs:
+  define-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.packages.outputs.packages }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Define packages
+        id: packages
+        run: |
+          echo `ls -d packages/* | xargs -n 1 basename | jq -R . | jq -s .` >> "$GITHUB_OUTPUT"
+
   test:
     name: '${{ matrix.package }} - node.js v${{ inputs.node-version }}'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        package:
-          - apollo-server-graphql-api
-          - async-setup-with-delay
-          - async-setup-with-file
-          - babel
-          - express-rest-api
-          - karma
-          - node-sqlite3
-          - playwright
-          - programmatic-usage
-          - puppeteer
-          - react-webpack
-          - rxjs
-          - selenium
-          - third-party-reporter
-          - typescript
-          - typescript-babel
-          - vue-puppeteer
+        package: ${{ fromJSON(needs.define-matrix.outputs.packages) }}
     steps:
       - uses: actions/setup-node@v4
         with:

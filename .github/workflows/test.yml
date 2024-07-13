@@ -13,14 +13,14 @@ jobs:
   test-node-v14:
     uses: ./.github/workflows/test-workflow.yml
     with:
-      node-version: 14
+      node-version: 18
       
   test-node-v16:
     uses: ./.github/workflows/test-workflow.yml
     with:
-      node-version: 16
+      node-version: 20
 
   test-node-v18:
     uses: ./.github/workflows/test-workflow.yml
     with:
-      node-version: 18
+      node-version: 22

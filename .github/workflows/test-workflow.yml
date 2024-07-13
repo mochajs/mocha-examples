@@ -17,7 +17,7 @@ jobs:
       - name: Define packages
         id: packages
         run: |
-          echo `ls -d packages/* | xargs -n 1 basename | jq -R . | jq -s .` >> "$GITHUB_OUTPUT"
+          echo "packages=$(ls -d packages/* | xargs -n 1 basename | jq -R . | jq -s -c .)" >> "$GITHUB_OUTPUT"
 
   test:
     name: '${{ matrix.package }} - node.js v${{ inputs.node-version }}'

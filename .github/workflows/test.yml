@@ -10,30 +10,17 @@ on:
       - reopened
 
 jobs:
-  test:
-    name: 'Node.js v${{ matrix.node }}'
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node:
-          - 18
-          - 20
-          - 22
-    steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '${{ matrix.node }}'
-      - uses: actions/checkout@v2
-      - name: 'Cache node_modules'
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('**/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-v${{ matrix.node }}-
-      - name: Install Dependencies
-        run: npm install
-      - name: Install Playwright
-        run: npx playwright install
-      - name: Run All Node.js Tests
-        run: npm run test
+  test-node-v14:
+    uses: ./.github/workflows/test-workflow.yml
+    with:
+      node-version: 18
+      
+  test-node-v16:
+    uses: ./.github/workflows/test-workflow.yml
+    with:
+      node-version: 20
+
+  test-node-v18:
+    uses: ./.github/workflows/test-workflow.yml
+    with:
+      node-version: 22

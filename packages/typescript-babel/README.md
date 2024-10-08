@@ -5,7 +5,7 @@ This is a example that uses Babel to transform TypeScript to plain JavaScript, a
 ## Commands
 
 - `npm run check-types` - check types for TypeScript.
-- `npm run lint` - run the TypeScript linter using the `tslint.json` config file.
+- `npm run lint` - run ESLint with typescript-eslint
 - `npm run compile` - compile the ES6 TypeScript into the `/lib` directory.
 - `npm test` - run the tests using the local `.mocharc.json` config file. Babel Config set is inside `babel.config.js`.
 

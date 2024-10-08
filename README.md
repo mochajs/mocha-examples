@@ -18,6 +18,7 @@ Additional examples include:
 - [Babel application](packages/babel/)
 - [Browser](packages/browser/)
 - [Express REST API](packages/express-rest-api/)
+- [Global Fixture](packages/global-fixture/)
 - [Karma](packages/karma/)
 - [Node Sqlite 3 example](packages/node-sqlite3/)
 - [Playwright application](packages/playwright/)

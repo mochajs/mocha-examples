@@ -1,0 +1,15 @@
+{
+  "name": "global-fixture",
+  "version": "1.0.0",
+  "description": "Global fixture example",
+  "scripts": {
+    "test": "mocha test.spec.js --require fixture.js"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "latest"
+  }
+}

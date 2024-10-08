@@ -10,7 +10,7 @@ body:
         - label: I want to provide a PR to resolve this
     type: checkboxes
   - attributes:
-      description: What is the feature gap or problem you'd like to address?
+      description: What is the missing example or problem you'd like to address?
       label: Overview
     type: textarea
     validations:
@@ -18,12 +18,6 @@ body:
   - attributes:
       description: How would you like to solve this need?
       label: Suggested Solution
-    type: textarea
-    validations:
-      required: true
-  - attributes:
-      description: What other features or solutions have you also considered?
-      label: Alternatives
     type: textarea
     validations:
       required: true

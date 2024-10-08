@@ -5,4 +5,5 @@ export default tseslint.config(
   { ignores: ["lib"] },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
+  ...tseslint.configs.stylistic,
 );

@@ -2,7 +2,7 @@
 
 Mocha supports third-party reporters that can support advanced or specific use-cases. Reporters wrap around [Runner](https://mochajs.org/api/runner) objects and optionally listen to the events they emit.
 
-To use a reporter published on npm (e.g., lcov-reporter), install it locally and set `--reporter lcov-reporter`.
+To use a reporter published on npm (e.g., lcov-reporter), install it locally and set `--reporter lcov-reporter`. Alternatively, you can set the reporter in `.mocharc.json` as we've done here.
 
 It is a very similar setup for [third party UI's](https://github.com/mochajs/mocha/wiki/Third-party-UIs).
 

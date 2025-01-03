@@ -6,7 +6,7 @@ To use a reporter published on npm (e.g., lcov-reporter), install it locally and
 
 It is a very similar setup for [third party UI's](https://github.com/mochajs/mocha/wiki/Third-party-UIs).
 
-For more details, see [Tutorial: Create a Custom Reporter](https://mochajs.org/api/tutorial-custom-reporter).
+For more details, including a list of which argument types go with which runner event, see [Tutorial: Create a Custom Reporter](https://mochajs.org/api/tutorial-custom-reporter).
 
 ## Commands
 

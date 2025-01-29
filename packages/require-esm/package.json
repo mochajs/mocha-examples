@@ -1,5 +1,5 @@
 {
-  "name": "esm",
+  "name": "require-esm",
   "version": "1.0.0",
   "description": "Example of using Mocha with native ESM in Node.js",
   "scripts": {

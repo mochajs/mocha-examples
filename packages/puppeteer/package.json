@@ -7,14 +7,14 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "express": "4.x",
-    "express-static": "1.x",
+    "express": "^4.21.2",
+    "express-static": "^1.2.6",
     "mocha": "latest",
-    "puppeteer": "^19.6.2",
-    "serve": "14.x"
+    "puppeteer": "^24.2.1",
+    "serve": "^14.2.4"
   },
   "engines": {
-    "nodejs": ">= 10.0.0"
+    "node": ">=10.0.0"
   },
   "license": "ISC",
   "dependencies": {}

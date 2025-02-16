@@ -9,3 +9,4 @@ It is a very similar setup for `third party UI's`, for more details see [here](h
 ## Commands
 
 - `npm test` - run our tests using the local `.mocharc.json` config file. They are run from the default location (`/test`) with the reporter found in `src/my-reporter.js`. In this example there is 1 failing test included, to demonstrate handling.
+

@@ -1,6 +1,13 @@
 const assert = require('assert');
 const puppeteer = require('puppeteer'); 
-const opts = process.env.D ? { headless: false, slowMo: 250 } : {}; 
+const opts = process.env.CI
+  ? {
+      args: ["--no-sandbox"],
+      headless: true,
+    }
+  : process.env.D
+  ? { headless: false, slowMo: 250 }
+  : {};
 
 describe('my app', function() {
   let browser;

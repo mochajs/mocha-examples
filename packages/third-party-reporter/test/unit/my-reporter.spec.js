@@ -1,7 +1,7 @@
 const { equal } = require('assert');
 
 describe('Third party reporter usage', () => {
-  it('should equal true', () => {
+  it('should pass', () => {
     equal(true, true);
   });
 

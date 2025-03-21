@@ -4,11 +4,8 @@
   "description": "Third party reporter usage example",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
-  },
-  "directories": {
-    "lib": "./lib",
-    "test": "./test"
+    "test": "mocha test/e2e/*.spec.js --reporter ./lib/my-reporter.js ",
+    "test:unit": "mocha test/unit/*.spec.js --reporter ./lib/my-reporter.js test"
   },
   "devDependencies": {
     "mocha": "latest"

@@ -10,4 +10,5 @@ For more details, including a list of which argument types go with which runner 
 
 ## Commands
 
-- `npm test` - run our tests using the local `.mocharc.json` config file. They are run from the default location (`/test`) with the reporter found in `src/my-reporter.js`.
+- `npm test` - run tests to validate `lib/my-reporter.js`
+- `npm run test:unit` - run tests to see the output of `lib/my-reporter.js` on failing tests

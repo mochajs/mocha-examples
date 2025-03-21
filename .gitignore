@@ -1,1 +1,3 @@
 node_modules/
+# We don't want to commit package locks for example projects
+**/package-lock.json

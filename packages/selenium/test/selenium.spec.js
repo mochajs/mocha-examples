@@ -10,7 +10,7 @@ const URL = "https://www.google.com/webhp?hl=en";
 describe("Selenium", () => {
   beforeEach(async () => {
     driver = await new Builder(path)
-      .forBrowser("chrome")
+      .forBrowser("chrome", "126")
       .setChromeOptions(chromeOptions)
       .build();
     await driver.get(URL);

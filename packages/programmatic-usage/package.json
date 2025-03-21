@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env TEST_DIR=./tests npm run test:programmatic-usage",
-    "test:programmatic-usage": "node $TEST_DIR/run_mocha.js"
+    "test:programmatic-usage": "node \"$TEST_DIR/run_mocha.js\""
   },
   "directories": {
     "lib": "./lib",

@@ -13,6 +13,8 @@ on:
 jobs:
   test:
     name: 'Node.js v${{ matrix.node }}'
+    # ubuntu-latest has issues running puppeteer
+    # https://github.com/mochajs/mocha-examples/issues/120
     runs-on: windows-latest
     strategy:
       matrix:

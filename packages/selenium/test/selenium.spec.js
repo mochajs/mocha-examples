@@ -1,15 +1,15 @@
 import "@babel/polyfill";
 import chrome from "selenium-webdriver/chrome";
-import { Builder, By, Key, Capabilities } from "selenium-webdriver";
+import { Builder, By, Key } from "selenium-webdriver";
 import assert from "assert";
-import { path } from "chromedriver";
+
 let driver = null;
 const chromeOptions = new chrome.Options().addArguments("--headless=new");
 const URL = "https://www.google.com/webhp?hl=en";
 
 describe("Selenium", () => {
   beforeEach(async () => {
-    driver = await new Builder(path)
+    driver = await new Builder()
       .forBrowser("chrome", "126")
       .setChromeOptions(chromeOptions)
       .build();

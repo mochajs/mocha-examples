@@ -35,4 +35,4 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run All Node.js Tests
-        run: cd packages/selenium && npm run test
+        run: npm run test

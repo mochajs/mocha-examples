@@ -10,6 +10,7 @@ let driver = null;
 describe("Selenium", () => {
   beforeEach(async () => {
     const options = new firefox.Options().addArguments('--headless');
+    // If Firefox is not installed, this line installs it, hence the 90 second test timeout
     driver = await new Builder()
       .forBrowser(Browser.FIREFOX)
       .setFirefoxOptions(options)

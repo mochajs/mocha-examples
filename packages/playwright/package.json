@@ -1,5 +1,5 @@
 {
-    "name": "exmaple-playwright-application",
+    "name": "example-playwright-application",
     "version": "1.0.0",
     "description": "example to use mocha with playwright",
     "main": "test/index.spec.js",

@@ -10,11 +10,11 @@
     "express": "4.x",
     "express-static": "1.x",
     "mocha": "latest",
-    "puppeteer": "^19.6.2",
+    "puppeteer": "^24.4.0",
     "serve": "14.x"
   },
   "engines": {
-    "nodejs": ">= 10.0.0"
+    "nodejs": ">= 18"
   },
   "license": "ISC"
 }

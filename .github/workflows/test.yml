@@ -1,3 +1,4 @@
+# Run all tests
 name: Tests
 on:
   push:

@@ -1,29 +1,41 @@
-import "@babel/polyfill";
-import chrome from "selenium-webdriver/chrome";
-import { Builder, By, Key, Capabilities } from "selenium-webdriver";
+// Adapted from Selenium docs
+// https://github.com/SeleniumHQ/seleniumhq.github.io/blob/6d10d09/examples/javascript/test/getting_started/firstScript.spec.js
+// Apache License 2.0, copyright 2025 Software Freedom Conservancy
+import { Builder, By, Browser } from "selenium-webdriver";
+import firefox from "selenium-webdriver/firefox";
 import assert from "assert";
-import { path } from "chromedriver";
+
 let driver = null;
-const chromeOptions = new chrome.Options().addArguments("--headless=new");
-const URL = "https://www.google.com/webhp?hl=en";
 
 describe("Selenium", () => {
   beforeEach(async () => {
-    driver = await new Builder(path)
-      .forBrowser("chrome")
-      .setChromeOptions(chromeOptions)
+    const options = new firefox.Options().addArguments('--headless');
+    // If Firefox is not installed, this line installs it, hence the 90 second test timeout
+    driver = await new Builder()
+      .forBrowser(Browser.FIREFOX)
+      .setFirefoxOptions(options)
       .build();
-    await driver.get(URL);
+    await driver.get('https://www.selenium.dev/selenium/web/web-form.html');
   });
 
   afterEach(async () => {
     await driver.quit();
   });
 
-  it("should render a message on a Google search result", async () => {
-    const element = await driver.findElement(By.name("q"));
-    await element.sendKeys("webdriver", Key.RETURN);
-    const res = await driver.findElement(By.css(".LC20lb")).getText();
-    assert.notEqual(res, null);
+  it("should submit a message", async () => {
+    let title = await driver.getTitle();
+    assert.equal("Web form", title);
+  
+    await driver.manage().setTimeouts({implicit: 500});
+  
+    let textBox = await driver.findElement(By.name('my-text'));
+    let submitButton = await driver.findElement(By.css('button'));
+  
+    await textBox.sendKeys('Selenium');
+    await submitButton.click();
+  
+    let message = await driver.findElement(By.id('message'));
+    let value = await message.getText();
+    assert.equal("Received!", value);
   });
 });

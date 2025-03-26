@@ -1,2 +1,3 @@
 require: '@babel/register'
-timeout: 10000
+# Allow additional time to install webdrivers
+timeout: 90000

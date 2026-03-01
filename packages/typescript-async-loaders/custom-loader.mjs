@@ -1,7 +1,7 @@
-export async function load(url, context, defaultLoad) {
+export async function load(url, context, nextLoad) {
   if (url.endsWith(".ts")) {
     console.log("Loaded with custom loader");
     await new Promise((resolve) => setTimeout(resolve, 1));
   }
-  return defaultLoad(url, context, defaultLoad);
+  return nextLoad(url, context);
 }

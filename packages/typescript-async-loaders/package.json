@@ -1,0 +1,17 @@
+{
+  "name": "example-typescript-async-loaders",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "scripts": {
+    "test": "mocha --loader=./custom-loader.mjs test/**/*.test.ts"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "@types/mocha": "^10.0.0"
+  }
+}

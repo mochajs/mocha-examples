@@ -6,7 +6,7 @@
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "scripts": {
-    "test": "mocha --loader=ts-node/esm --loader=./custom-loader.mjs test/**/*.test.ts"
+    "test": "mocha --loader=./custom-loader.mjs test/**/*.test.ts"
   },
   "devDependencies": {
     "mocha": "^11.7.0",

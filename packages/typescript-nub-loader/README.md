@@ -7,7 +7,7 @@ npm install
 npm test
 ```
 
-The test command type-checks the fixture, then starts Mocha with `--import=@nubjs/loader` and `--parallel`. The loader is pinned to `0.8.3`, and the example requires Node `18.19.0` or newer.
+The test command type-checks the fixture, then starts Mocha with `--enable-source-maps`, `--import=@nubjs/loader`, and `--parallel`. The loader is pinned to `0.8.3`, and the example requires Node `18.19.0` or newer.
 
 Mocha discovers TypeScript tests through `.mocharc.json`:
 
@@ -18,9 +18,10 @@ Mocha discovers TypeScript tests through `.mocharc.json`:
 }
 ```
 
-The fixture covers both module formats:
+The fixture covers both module formats and source maps:
 
 - `message.spec.ts` imports an ES module through its emitted `.js` specifier.
 - `legacy.spec.cts` loads a CommonJS `.cts` module with `require()`.
+- `source-map.spec.ts` checks the original TypeScript line after an enum transform.
 
 The loader changes TypeScript execution only. Mocha remains the test runner, including its configuration, assertions, and parallel execution.

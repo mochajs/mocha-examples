@@ -18,10 +18,9 @@ Mocha discovers TypeScript tests through `.mocharc.json`:
 }
 ```
 
-The fixture covers both module formats and source maps:
+The fixture covers both module formats:
 
 - `message.spec.ts` imports an ES module through its emitted `.js` specifier.
 - `legacy.spec.cts` loads a CommonJS `.cts` module with `require()`.
-- `source-map.spec.ts` checks that a stack trace points at the TypeScript source file.
 
 The loader changes TypeScript execution only. Mocha remains the test runner, including its configuration, assertions, and parallel execution.

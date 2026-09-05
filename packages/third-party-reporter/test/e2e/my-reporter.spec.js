@@ -3,7 +3,7 @@ const {
   EVENT_TEST_PASS, 
   EVENT_TEST_FAIL, 
   EVENT_TEST_END 
-} = require('mocha').Runner.constants;
+} = require('mocha').default.Runner.constants;
 const MyReporter = require('../../lib/my-reporter');
 
 const pendingTest = {
@@ -58,7 +58,7 @@ describe('My Reporter e2e tests', () => {
           callback(passTest);
         }
       };
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedPassMessage);
@@ -77,7 +77,7 @@ describe('My Reporter e2e tests', () => {
         }
       };
 
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedFailMessage);
@@ -100,7 +100,7 @@ describe('My Reporter e2e tests', () => {
         tests: 2
       }
 
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedEndMessage);

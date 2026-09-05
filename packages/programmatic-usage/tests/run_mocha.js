@@ -1,25 +1,28 @@
 const fs = require('fs');
 const path = require('path');
-const Mocha = require('mocha');
 
-// Instantiate a Mocha with options
-const mocha = new Mocha({
-  reporter: 'list'
-});
-
-// Use non-default Mocha test directory.
-const testDir = process.env.TEST_DIR;
-
-// Add each .js file to the mocha instance
-fs.readdirSync(testDir)
-  .filter(function(file) {
-    return path.extname(file) === '.js';
-  })
-  .forEach(function(file) {
-    mocha.addFile(path.join(testDir, file));
+async function run() {
+  const { default: Mocha } = require('mocha');
+  const mocha = new Mocha({
+    reporter: 'list'
   });
 
-// Run the tests.
-mocha.run(function(failures) {
-  process.exitCode = failures ? 1 : 0; // exit with non-zero status if there were failures
+  const testDir = process.env.TEST_DIR;
+
+  fs.readdirSync(testDir)
+    .filter(function(file) {
+      return path.extname(file) === '.js' && file !== path.basename(__filename);
+    })
+    .forEach(function(file) {
+      mocha.addFile(path.join(testDir, file));
+    });
+
+  mocha.run(function(failures) {
+    process.exitCode = failures ? 1 : 0;
+  });
+}
+
+run().catch(function(error) {
+  console.error(error);
+  process.exitCode = 1;
 });

@@ -3,6 +3,6 @@ import { sourceMapStack } from "./source-map.js";
 
 describe("source maps", () => {
   it("reports the TypeScript source location", () => {
-    assert.match(sourceMapStack(), /source-map\.ts:\d+:\d+/);
+    assert.match(sourceMapStack(), /source-map\.ts:11:\d+/);
   });
 });

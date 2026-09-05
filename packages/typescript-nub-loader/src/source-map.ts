@@ -1,3 +1,12 @@
+enum FailureKind {
+  Fixture = "fixture",
+}
+
 export function sourceMapStack(): string {
-  return new Error("source map fixture").stack ?? "";
+  const message = [
+    "source map",
+    FailureKind.Fixture,
+  ].join(": ");
+
+  return new Error(message).stack ?? "";
 }

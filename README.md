@@ -31,6 +31,7 @@ Additional examples include:
 - [Third party reporter](packages/third-party-reporter/)
 - [TypeScript application](packages/typescript/)
 - [TypeScript with `ts-node`'s ESM loader](packages/typescript-ts-node-esm-loader/)
+- [TypeScript with `@nubjs/loader`](packages/typescript-nub-loader/)
 - [TypeScript with `tsx`'s ESM import](packages/typescript-tsx-esm-import/)
 - [TypeScript, Babel](packages/typescript-babel/)
 - [Vue and Puppeteer application](packages/vue-puppeteer/)

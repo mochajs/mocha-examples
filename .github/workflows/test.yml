@@ -10,6 +10,13 @@ on:
       - reopened
   workflow_dispatch:
 
+env:
+  # The puppeteer examples launch regular headless Chrome, never
+  # `headless: 'shell'`, so chrome-headless-shell is unused. Its download
+  # also fails cache validation on Windows runners (the extracted .exe
+  # disappears between installs), so skip it entirely.
+  PUPPETEER_CHROME_HEADLESS_SHELL_SKIP_DOWNLOAD: 'true'
+
 jobs:
   test:
     name: 'Node.js v${{ matrix.node }}'

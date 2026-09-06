@@ -36,9 +36,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-v${{ matrix.node }}-
       - name: Install Dependencies
-        # The two puppeteer examples share one browser cache, and their
-        # install scripts each try to populate it. Install the browsers once
-        # in the following step instead.
         run: npm install
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'

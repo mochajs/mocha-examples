@@ -9,12 +9,12 @@
   "devDependencies": {
     "@types/mocha": "latest",
     "assert": "^2.1.0",
-    "mocha": "^10.2.0",
+    "mocha": "latest",
     "tsx": "^4.16.2",
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "license": "MIT",
   "type": "module"

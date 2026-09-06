@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const Mocha = require('mocha');
+const { Mocha } = require('mocha');
 
 // Instantiate a Mocha with options
 const mocha = new Mocha({

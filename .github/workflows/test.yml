@@ -10,13 +10,6 @@ on:
       - reopened
   workflow_dispatch:
 
-env:
-  # The puppeteer examples launch regular headless Chrome, never
-  # `headless: 'shell'`, so chrome-headless-shell is unused. Its download
-  # also fails cache validation on Windows runners (the extracted .exe
-  # disappears between installs), so skip it entirely.
-  PUPPETEER_CHROME_HEADLESS_SHELL_SKIP_DOWNLOAD: 'true'
-
 jobs:
   test:
     name: 'Node.js v${{ matrix.node }}'
@@ -42,12 +35,15 @@ jobs:
           key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('**/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-v${{ matrix.node }}-
-      - name: Exclude browser caches from Windows Defender
-        # Defender's real-time scanning can quarantine freshly extracted
-        # Chrome for Testing binaries, leaving the puppeteer cache with a
-        # browser folder whose executable is missing.
-        run: Add-MpPreference -ExclusionPath "$env:USERPROFILE\.cache", "$env:LOCALAPPDATA\ms-playwright"
       - name: Install Dependencies
+        # The two puppeteer examples share one browser cache, and their
+        # install scripts each try to populate it. Install the browsers once
+        # in the following step instead.
         run: npm install
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+      - name: Install Chrome for the puppeteer examples
+        run: npx puppeteer browsers install chrome
+        working-directory: packages/puppeteer
       - name: Run All Node.js Tests
         run: npm run test

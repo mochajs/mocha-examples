@@ -24,8 +24,8 @@ describe('my app', function() {
   });
 
   after(async function() {
-    await browser.close();
-    await server.close();
+    await browser?.close();
+    await server?.close();
   });
 
   it('displays the current page', async function() {

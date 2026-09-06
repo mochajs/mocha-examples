@@ -40,7 +40,7 @@ jobs:
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
       - name: Install Chrome for the puppeteer examples
-        run: npx puppeteer browsers install chrome
+        run: node node_modules/puppeteer/lib/cjs/puppeteer/node/cli.js browsers install chrome
         working-directory: packages/puppeteer
       - name: Run All Node.js Tests
         run: npm run test

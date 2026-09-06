@@ -42,6 +42,11 @@ jobs:
           key: ${{ runner.os }}-node-v${{ matrix.node }}-${{ hashFiles('**/package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-v${{ matrix.node }}-
+      - name: Exclude browser caches from Windows Defender
+        # Defender's real-time scanning can quarantine freshly extracted
+        # Chrome for Testing binaries, leaving the puppeteer cache with a
+        # browser folder whose executable is missing.
+        run: Add-MpPreference -ExclusionPath "$env:USERPROFILE\.cache", "$env:LOCALAPPDATA\ms-playwright"
       - name: Install Dependencies
         run: npm install
       - name: Run All Node.js Tests

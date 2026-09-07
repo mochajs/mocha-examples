@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap --no-ci --concurrency 1 && npm run clean:packagelock",
-    "test": "lerna run --stream test",
+    "test": "lerna run --stream --concurrency 1 test",
     "clean": "lerna clean",
     "postclean": "npm run clean:packagelock",
     "clean:packagelock": "rimraf -g **/package-lock.json"

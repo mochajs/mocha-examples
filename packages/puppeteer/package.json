@@ -10,7 +10,7 @@
     "express": "^4.21.2",
     "express-static": "^1.2.6",
     "mocha": "latest",
-    "puppeteer": "^24.2.1",
+    "puppeteer": "^25.0.0",
     "serve": "^14.2.4"
   },
   "engines": {

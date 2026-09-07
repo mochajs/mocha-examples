@@ -38,13 +38,5 @@ jobs:
             ${{ runner.os }}-node-v${{ matrix.node }}-
       - name: Install Dependencies
         run: npm install
-        env:
-          PUPPETEER_SKIP_DOWNLOAD: 'true'
-      - name: Install Chrome for the puppeteer examples
-        working-directory: packages/puppeteer
-        run: |
-          node -p "const p = require('puppeteer'); process.version + ' ' + JSON.stringify((p.default || p).configuration)"
-          node node_modules/puppeteer/lib/cjs/puppeteer/node/cli.js browsers install chrome
-          node -e "const fs=require('fs'); const p=require('puppeteer').executablePath(); console.log('resolved:', p, 'exists:', fs.existsSync(p)); if (!fs.existsSync(p)) process.exit(1)"
       - name: Run All Node.js Tests
         run: npm run test

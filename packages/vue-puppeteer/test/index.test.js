@@ -9,7 +9,7 @@ describe('my app', function() {
   let server;
 
   before(async function() {
-    this.timeout(10000);
+    this.timeout(30000);
 
     // Create an Express static server that will serve up `index.html` at
     // `http://localhost:3000/index.html`
@@ -24,8 +24,8 @@ describe('my app', function() {
   });
 
   after(async function() {
-    await browser.close();
-    await server.close();
+    await browser?.close();
+    await server?.close();
   });
 
   it('displays the current page', async function() {

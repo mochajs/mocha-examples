@@ -58,7 +58,7 @@ describe('My Reporter e2e tests', () => {
           callback(passTest);
         }
       };
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedPassMessage);
@@ -77,7 +77,7 @@ describe('My Reporter e2e tests', () => {
         }
       };
 
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedFailMessage);
@@ -100,7 +100,7 @@ describe('My Reporter e2e tests', () => {
         tests: 2
       }
 
-      MyReporter.call({}, runner);
+      new MyReporter(runner);
       console.log = savedConsoleLog;
 
       deepEqual(stdout[0], expectedEndMessage);

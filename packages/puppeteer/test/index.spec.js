@@ -29,8 +29,8 @@ describe('my app', function() {
   });
 
   after(async function() {
-    await browser.close();
-    await server.close();
+    await browser?.close();
+    await server?.close();
   });
 
   it('h1 should say "mocha is good"', async function() {  

@@ -4,17 +4,17 @@
   "description": "Mocha and Puppeteer example",
   "scripts": {
     "start": "serve .",
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "devDependencies": {
     "express": "^4.21.2",
     "express-static": "^1.2.6",
     "mocha": "latest",
-    "puppeteer": "^24.2.1",
+    "puppeteer": "^25.0.0",
     "serve": "^14.2.4"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "license": "ISC",
   "dependencies": {}

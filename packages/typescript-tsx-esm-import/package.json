@@ -4,7 +4,7 @@
   "description": "TypeScript example with tsx as an import",
   "scripts": {
     "tsc": "tsc",
-    "test": "mocha --import=tsx"
+    "test": "mocha --import=tsx/esm"
   },
   "devDependencies": {
     "@types/mocha": "latest",

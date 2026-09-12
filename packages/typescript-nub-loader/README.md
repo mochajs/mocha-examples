@@ -7,7 +7,7 @@ npm install
 npm test
 ```
 
-The test command type-checks the fixture, then starts Mocha with `--enable-source-maps`, `--import=@nubjs/loader`, and `--parallel`. The loader is pinned to `0.8.3`, and the example requires Node `18.19.0` or newer.
+The test command type-checks the fixture, then starts Mocha with `--enable-source-maps`, `--import=@nubjs/loader`, and `--parallel`. The loader is pinned to `0.8.3`, and the example uses Mocha's supported Node versions: `^20.19.0 || >=22.12.0`.
 
 Mocha discovers TypeScript tests through `.mocharc.json`:
 

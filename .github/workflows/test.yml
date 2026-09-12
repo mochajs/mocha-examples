@@ -11,32 +11,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  nub-loader-node-18:
-    name: '@nubjs/loader on Node.js v18.19'
-    runs-on: windows-latest
-    defaults:
-      run:
-        working-directory: packages/typescript-nub-loader
-    steps:
-      - uses: actions/checkout@v4.2.2
-      - uses: actions/setup-node@v4.3.0
-        with:
-          node-version: '18.19.0'
-      - name: Install Dependencies
-        run: npm install
-      - name: Run Loader Example
-        run: npm test
-
   test:
     name: 'Node.js v${{ matrix.node }}'
     # ubuntu-latest has issues running puppeteer
     # https://github.com/mochajs/mocha-examples/issues/120
     runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
         node:
           - 20
           - 22
+          - 24
+          - 26
     steps:
       - uses: actions/setup-node@v4.3.0
         with:

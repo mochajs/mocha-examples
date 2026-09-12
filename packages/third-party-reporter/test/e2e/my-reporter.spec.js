@@ -3,7 +3,7 @@ const {
   EVENT_TEST_PASS, 
   EVENT_TEST_FAIL, 
   EVENT_TEST_END 
-} = require('mocha').default.Runner.constants;
+} = require('mocha').Runner.constants;
 const MyReporter = require('../../lib/my-reporter');
 
 const pendingTest = {

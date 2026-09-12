@@ -1,0 +1,4 @@
+{
+  "extension": ["ts", "cts"],
+  "spec": ["src/**/*.spec.ts", "src/**/*.spec.cts"]
+}

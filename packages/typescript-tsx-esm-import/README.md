@@ -1,6 +1,6 @@
 # TypeScript with `tsx` Loader
 
-A standalone project showing TypeScript source files transpiled on-the-fly with [`--import tsx`](https://tsx.is/node) as a Node ECMAScript Modules importer.
+A standalone project showing TypeScript source files transpiled on-the-fly with [`--import tsx/esm`](https://tsx.hirok.io/) as a Node ECMAScript Modules importer.
 
 ```shell
 npm i

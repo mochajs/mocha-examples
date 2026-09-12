@@ -1,16 +1,16 @@
 {
-  "name": "typescript-tsx-esm-import",
+  "name": "typescript-nub-loader",
   "version": "1.0.0",
-  "description": "TypeScript example with tsx as an import",
+  "description": "TypeScript example with @nubjs/loader as an import",
   "scripts": {
     "tsc": "tsc",
-    "test": "mocha --import=tsx/esm"
+    "test": "npm run tsc && mocha --enable-source-maps --import=@nubjs/loader --parallel"
   },
   "devDependencies": {
+    "@nubjs/loader": "0.8.3",
     "@types/mocha": "latest",
-    "assert": "^2.1.0",
+    "@types/node": "^20.17.30",
     "mocha": "latest",
-    "tsx": "^4.16.2",
     "typescript": "^5.3.3"
   },
   "engines": {

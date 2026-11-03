@@ -28,6 +28,15 @@ describe("Sqlite", function () {
     assert.deepEqual(user, [{ id: 1, name, email }]);
   });
 
+  it("should insert and fetch a user whose name contains a quote", async () => {
+    const name = "o'mocha";
+    const email = "o'mocha@test.com";
+
+    await insertUser(db, name, email);
+    const user = await getUsersByName(db, name);
+    assert.deepEqual(user, [{ id: 2, name, email }]);
+  });
+
   after(() => {
     closeDBPool(db);
   });

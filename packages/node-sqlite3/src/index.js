@@ -30,7 +30,7 @@ exports.dropTable = function dropTable(db) {
 
 exports.insertUser = function insertUser(db, name, email) {
     return new Promise((resolve, reject) => {
-        db.run(`INSERT INTO user(name, email) VALUES('${name}', '${email}')`, (err)=> {
+        db.run("INSERT INTO user(name, email) VALUES(?, ?)", [name, email], (err)=> {
             if(err) {
                 reject(err);
             } else {
@@ -41,10 +41,8 @@ exports.insertUser = function insertUser(db, name, email) {
 };
 
 exports.getUsersByName = function getUsersByName(db, name) {
-  let sql = `SELECT * FROM user WHERE name = '${name}'`;
-
   return new Promise((resolve, reject) => {
-    db.all(sql, (err, rows) => {
+    db.all("SELECT * FROM user WHERE name = ?", [name], (err, rows) => {
       if (err) {
         return reject(err);
       }
